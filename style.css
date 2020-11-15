@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700;800&display=swap');
+
+:root {
+    --primary-color: #606060;
+    --secondy-color: #303030;
+    --black-light: rgba(0,0,0,.2);
+}
+
+*, 
+html, 
+#root {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body,
+button,
+input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-weight: 300;
+}
+
+/* Unidades de medida  */
+.w-full { width: 100%; }
+.w-50 { width: 50%; }
+.w-30 { width: 30%; }
+.w-15 { width: 150px; }
+
+.h-0 { height: 0px; }
+.h-20 { height: 20px; }
+.h-full { height: 100vh; }
+.h-15 { height: 150px; }
+
+.m-1 { margin: 10px; }
+.m-5 { margin: 50px; }
+.mt-0 { margin-top: -300px; }
+.mt-1 { margin-top: 10px; }
+.mt-10 { margin-top: 100px; }
+.mt-15 { margin-top: 150px; }
+
+.p-1 { padding: 10px; }
+
+/* flex  */
+.flex { display: flex; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-column { flex-direction: column; }
+.flex-row { flex-direction: row; }
+
+.justify-center { justify-content: center; }
+.items-center { align-items: center; }
+
+/* bordas  */
+.rounded { border-radius: 10px; }
+.rounded-full { border-radius: 100px; }
+.object-cover { object-fit: cover; }
+
+/* sombra  */
+.shadow { box-shadow: 1px 1px 1px var(--black-light) ; }
+.shadow-lg { 
+    box-shadow: 1px 1px 1px var(--black-light),
+    -1px 1px 1px var(--black-light) ; }
+
+/* texto  */
+.text-center { text-align: center;}
+
+/* position  */
+.relative { position: relative; }
+.absolute { position: absolute; }
+
+.top--50 { top: -50px; }
+
+/* opacidade  */
+.opacity-1 {  opacity: 1; }
+.opacity-0 {  opacity: 0; }
+
+/* cursor  */
+.cursor-pointer { cursor: pointer; }
+
+/* transition */
+.transition-1 { transition: 1s ease-in-out; }
+.delay-3 { transition-delay: 3s; }
+
+/* z-index */
+.z-1 { z-index: 1000; }
+
+/* diversos */
+.hidden { display: none; }
+.overflow-hidden { overflow: hidden; }
+
+/* background  */
+.bg-gray { background-color:var(--primary-color); }
+
+/* elementos  */
+#card:hover div {
+    opacity: 1;
+    margin-top: 130px;
+}
+
+@media (max-width:700px) {
+    .w-30 {
+        width: 100%;
+    }
+
+    .m-1:not(:first-child){
+        margin-top: 300px;
+    }
+}
